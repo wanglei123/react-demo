@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import PostItem from './PostItem';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const postData = [
   {id: 1,title: '大家一起来讨论',author: '张三', date: '2021-09-09 10:00', vote:0},
@@ -39,6 +45,8 @@ class PostList extends Component {
       clearTimeout(this.timer)
     }
   }
+
+
   render(){
     return (<div style={{textAlign: 'left'}}>
       帖子列表:
