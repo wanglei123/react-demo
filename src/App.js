@@ -5,6 +5,7 @@ import Header from './Post/header';
 import Timer from './Timer'
 import Count from './Count/Count'
 import Count2 from './count'
+import EffectTest from './EffectTest'
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Count></Count>
       <hr/>
       <Count2></Count2>
+      <hr/>
+      <EffectTest />
     </div>
   );
 }
